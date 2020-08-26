@@ -4,9 +4,10 @@ import android.nfc.NfcAdapter;
 import android.nfc.Tag;
 import android.nfc.tech.IsoDep;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import net.sf.scuba.smartcards.CardService;
 import net.sf.scuba.smartcards.CardServiceException;

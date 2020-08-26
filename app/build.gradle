@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "23.0.2"
+    compileSdkVersion 30
+    buildToolsVersion "30.0.1"
 
     defaultConfig {
         applicationId "bg.bozho.emrtdreader"
         minSdkVersion 15
-        targetSdkVersion 22
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
     }
@@ -24,11 +24,12 @@ android {
 }
 
 dependencies {
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:22.2.1'
-    compile 'com.android.support:design:22.2.1'
-    compile 'org.jmrtd:jmrtd:0.5.5'
+    compile 'androidx.appcompat:appcompat:1.2.0'
+    compile 'com.google.android.material:material:1.2.0'
+        compile 'org.jmrtd:jmrtd:0.5.5'
     compile 'com.madgag.spongycastle:prov:1.54.0.0'
     compile 'net.sf.scuba:scuba-sc-android:0.0.9';
 }
